@@ -7,5 +7,16 @@
     <h1># Question Guide #</h1>
     <a href="/ask" class="btn btn-info">Questions page</a>
 </div>
-
+<div class="container">
+    <% ask.forEach((value)=>{ %>
+    <div class="card mt-4">
+        <div class="card-body">
+            <h4><%= value.title %></h4>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-primary">Response</button>
+        </div>
+    </div>
+    <% }) %>
+</div>
 <%- include('./partials/footer.ejs') %>
