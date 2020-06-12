@@ -1,0 +1,28 @@
+<!-- Include header -->
+<%- include('./partials/header.ejs') %> 
+<!-- Include navbar -->
+<%- include('./partials/navbar.ejs') %>
+
+<div class="container">
+    <div class="card mt-4">
+        <div class="card-header">
+            <h1 class="float-left">Ask a question</h1> 
+            <a href="/" class="float-right btn btn-secondary">Goback</a>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="Type your title" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="ask">Ask</label>
+                    <textarea id="ask" placeholder="Type your ask" class="form-control"></textarea>
+                </div>
+                <button class="btn btn-primary float-right">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Include footer -->
+<%- include('./partials/footer.ejs') %>

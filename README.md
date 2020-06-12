@@ -7,6 +7,17 @@ Tanto o backend quanto o frontend será realizado neste único projeto.
 
 Aqui será abordado: NodeJS, JS, EJS (para front) e MySQL.
 
+### Se quiser testar:
+Clone o projeto:
+<code>git clone https://github.com/salubcosta/guiaperguntas-node.git </code>
+
+Instale as dependências:
+<code>npm install</code>
+
+Para executar o projeto:
+<code>nodemon index.js</code>
+
+## meu log
 Para iniciar o projeto Nodejs:
 <code>
 npm init
