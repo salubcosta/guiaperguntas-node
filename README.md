@@ -15,9 +15,10 @@ Instale as dependências:
 <code>npm install</code>
 
 Para executar o projeto:
-<code>nodemon index.js</code>
+<code>npm run dev</code>
 
-## meu log
+
+### meu log
 Para iniciar o projeto Nodejs:
 <code>
 npm init
