@@ -5,7 +5,7 @@ Faz parte de curso Formação Node do guiadoprogramador.
 
 Tanto o backend quanto o frontend será realizado neste único projeto.
 
-Aqui será abordado: NodeJS, JS, EJS (para front) e MySQL.
+Aqui será abordado: NodeJS, JS, EJS (para front) e MariaDB.
 
 ### Se quiser testar:
 Clone o projeto:
@@ -37,6 +37,21 @@ npm install ejs --save
 Para deixar de forma automática a reinicialização do servidor quando realizar alguma alteração, tipo hot reload. Faça:
 <code>
 npm install nodemon --save
+</code>
+
+O node em si não sabe converter dados do body para o formato que precisamos. Para tanto, existe um módulo capaz de fazer esta conversão. Execute:
+<code>
+npm install body-parser --save
+</code>
+
+Para trabalhar com bando de dados, podemos utilizar uma biblioteca que irá nos auxiliar. Sequelizer.
+<code>
+npm install sequelize --save
+</code>
+
+Como este projeto está utilizando o MariaDB. Segue o fluxo:
+<code>
+npm install --save mariadb
 </code>
 
 Dessa forma podes usar <code>nodemon index.js</code>. Ou ainda, ir no arquivo package.json e na chave scripts incluir o seguinte:
