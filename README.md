@@ -1,7 +1,7 @@
 # Guia Perguntas e Respostas
 Este é um projeto de perguntas e respostas para testar conhecimentos.
 
-Faz parte de curso Formação Node do guiadoprogramador.
+Faz parte de curso Formação Node do <a href='https://www.udemy.com/course/formacao-nodejs/' target='_blank'>guiadoprogramador.</a>
 
 Tanto o backend quanto o frontend será realizado neste único projeto.
 
