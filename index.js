@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const connection = require('./database/database'); 
 const Ask = require('./database/Ask');
+const Response = require('./database/Response');
 
 /**
  * Conexão com Banco de dados
@@ -65,20 +66,28 @@ app.get('/details/:id', (req, res)=>{
     Ask.findOne({where: {id: _id}})
     .then((ask)=>{
         if(ask != undefined){
-            res.render('details', { ask: ask });
+            Response.findAll({where:{askId: _id}}).then((response)=>{
+                res.render('details', {
+                    ask: ask,
+                    response: response});
+            })
         } else {
             res.send('Ask not found!');
         }
     });
-    // Ask.findOne({where: {id: id}})
-    // .then((ask) =>{
-    //     if(ask != undefined){ //Ask found.
-    //         res.send('Found!!!');
-    //     } else{ //Not found
-    //         res.send('Nothing found!');
-    //     }
-    // });
+});
+
+app.post('/answering', (req, res)=>{
+    Response.create({
+        bodyResponse: req.body.response,
+        askId: req.body.id
+    }).then(()=>{
+        res.redirect(`/details/${req.body.id}`)
+    }).catch(err=>{
+        res.send(`Oh no! something wrong happened. Error: ${err}`);
+    })
 })
+
 app.listen(4000, ()=>{
     console.log('Server running!');
 });
