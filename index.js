@@ -66,7 +66,7 @@ app.get('/details/:id', (req, res)=>{
     Ask.findOne({where: {id: _id}})
     .then((ask)=>{
         if(ask != undefined){
-            Response.findAll({where:{askId: _id}}).then((response)=>{
+            Response.findAll({where:{askId: _id}, order:[['id', 'desc']]}).then((response)=>{
                 res.render('details', {
                     ask: ask,
                     response: response});
