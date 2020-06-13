@@ -1,13 +1,27 @@
 <%- include('./partials/header.ejs') %> 
 <%- include('./partials/navbar.ejs') %>
 
-<div class="container">
-    Detalhes
-    <label>Title</label>
-    <label><%= ask.title %></label>
-    <label>Description</label>
-    <label><%= ask.description %></label>
-<% %>
+<div class="container mt-4">
+    <h1><%= ask.title %></h1>
+    <p><%= ask.description %></p>
+    <hr>
+    <h2>Response</h2>
+    <form method="POST" action="/answering">
+        <div class="form-group">
+            <label for="res">Your response here:</label>
+            <textarea name="response" id="res" rows="5" placeholder="Put your response here" class="form-control"></textarea>
+            <input type="hidden" value="<%= ask.id %>" name="id">
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+    <hr>
+    <% response.forEach(res => {%>
+        <div class="card mb-4">
+            <div class="card-body">
+                <p><%= res.bodyResponse%></p>
+            </div>
+        </div>
+    <% });%>
 </div>
 
 <%- include('./partials/footer.ejs') %>
