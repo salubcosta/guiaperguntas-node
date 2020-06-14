@@ -59,6 +59,18 @@ Dessa forma podes usar <code>nodemon index.js</code>. Ou ainda, ir no arquivo pa
 
 Agora para iniciar o servidor para todo sempre amém, basta digitar: <code>npm run dev</code>
 
+### Screenshots
+
+Home
+<img src='https://raw.githubusercontent.com/salubcosta/guiaperguntas-node/master/public/screenshots/screenshot-home.png' width='100%'> 
+
+
+Details and Answer
+<img src='https://raw.githubusercontent.com/salubcosta/guiaperguntas-node/master/public/screenshots/screenshot-details-and-answer.png' width='100%'> 
+
+
+Ask
+<img src='https://raw.githubusercontent.com/salubcosta/guiaperguntas-node/master/public/screenshots/screenshot-ask.png' width='100%'> 
 <hr />
 
 Thank you for coming here,<br />
