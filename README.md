@@ -1,7 +1,7 @@
 # Guia Perguntas e Respostas
 Este é um projeto de perguntas e respostas para testar conhecimentos.
 
-Faz parte de curso Formação Node do <a href='https://www.udemy.com/course/formacao-nodejs/' target='_blank'>guiadoprogramador.</a>
+Este repo foi inspirado em um projeto prático do @guiadoprogramador, no entanto, com uma série de melhorias implementadas por mim.
 
 Tanto o backend quanto o frontend será realizado neste único projeto.
 
@@ -17,6 +17,7 @@ Instale as dependências:
 Para executar o projeto:
 <code>npm run dev</code>
 
+* Não esqueça de configurar o arquivo no diretório /database para as credenciais do seu banco de dados. As tabelas serão criadas automaticamente com o auxílio do sequelize
 
 ### meu log
 Para iniciar o projeto Nodejs:
